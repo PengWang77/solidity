@@ -1,0 +1,879 @@
+{
+	"id": "d66243bf6c342fa59cbcafff9704f49f",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"SOLPractice/WTF001.sol": {
+				"content": "pragma solidity >= 0.7.0 < 0.9.0;\n\ncontract WTF001 {\n\n    enum ActionSet { Buy, Hold, Sell }\n    // 创建enum变量 action\n    ActionSet action = ActionSet.Buy;\n\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"SOLPractice/WTF001.sol": {
+				"WTF001": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"SOLPractice/WTF001.sol\":35:164  contract WTF001 {... */\n  mstore(0x40, 0x80)\n    /* \"SOLPractice/WTF001.sol\":147:160  ActionSet.Buy */\n  0x00\n    /* \"SOLPractice/WTF001.sol\":128:160  ActionSet action = ActionSet.Buy */\n  dup1\n  exp(0x0100, 0x00)\n  dup2\n  sload\n  dup2\n  0xff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0x02\n  dup2\n  gt\n  iszero\n  tag_1\n  jumpi\n  tag_2\n  tag_3\n  jump\t// in\ntag_2:\ntag_1:\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"SOLPractice/WTF001.sol\":35:164  contract WTF001 {... */\n  callvalue\n  dup1\n  iszero\n  tag_4\n  jumpi\n  0x00\n  dup1\n  revert\ntag_4:\n  pop\n  jump(tag_5)\n    /* \"#utility.yul\":7:187   */\ntag_3:\n    /* \"#utility.yul\":55:132   */\n  0x4e487b7100000000000000000000000000000000000000000000000000000000\n    /* \"#utility.yul\":52:53   */\n  0x00\n    /* \"#utility.yul\":45:133   */\n  mstore\n    /* \"#utility.yul\":152:156   */\n  0x21\n    /* \"#utility.yul\":149:150   */\n  0x04\n    /* \"#utility.yul\":142:157   */\n  mstore\n    /* \"#utility.yul\":176:180   */\n  0x24\n    /* \"#utility.yul\":173:174   */\n  0x00\n    /* \"#utility.yul\":166:181   */\n  revert\n    /* \"SOLPractice/WTF001.sol\":35:164  contract WTF001 {... */\ntag_5:\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"SOLPractice/WTF001.sol\":35:164  contract WTF001 {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212206c12ffb099c167ea1ac4f68ea44f8a41e9e1b4bfd1e7bd212e157e0d6a57765564736f6c63430008110033\n}\n",
+						"bytecode": {
+							"functionDebugData": {
+								"panic_error_0x21": {
+									"entryPoint": 59,
+									"id": null,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [
+								{
+									"ast": {
+										"nodeType": "YulBlock",
+										"src": "0:190:1",
+										"statements": [
+											{
+												"body": {
+													"nodeType": "YulBlock",
+													"src": "35:152:1",
+													"statements": [
+														{
+															"expression": {
+																"arguments": [
+																	{
+																		"kind": "number",
+																		"nodeType": "YulLiteral",
+																		"src": "52:1:1",
+																		"type": "",
+																		"value": "0"
+																	},
+																	{
+																		"kind": "number",
+																		"nodeType": "YulLiteral",
+																		"src": "55:77:1",
+																		"type": "",
+																		"value": "35408467139433450592217433187231851964531694900788300625387963629091585785856"
+																	}
+																],
+																"functionName": {
+																	"name": "mstore",
+																	"nodeType": "YulIdentifier",
+																	"src": "45:6:1"
+																},
+																"nodeType": "YulFunctionCall",
+																"src": "45:88:1"
+															},
+															"nodeType": "YulExpressionStatement",
+															"src": "45:88:1"
+														},
+														{
+															"expression": {
+																"arguments": [
+																	{
+																		"kind": "number",
+																		"nodeType": "YulLiteral",
+																		"src": "149:1:1",
+																		"type": "",
+																		"value": "4"
+																	},
+																	{
+																		"kind": "number",
+																		"nodeType": "YulLiteral",
+																		"src": "152:4:1",
+																		"type": "",
+																		"value": "0x21"
+																	}
+																],
+																"functionName": {
+																	"name": "mstore",
+																	"nodeType": "YulIdentifier",
+																	"src": "142:6:1"
+																},
+																"nodeType": "YulFunctionCall",
+																"src": "142:15:1"
+															},
+															"nodeType": "YulExpressionStatement",
+															"src": "142:15:1"
+														},
+														{
+															"expression": {
+																"arguments": [
+																	{
+																		"kind": "number",
+																		"nodeType": "YulLiteral",
+																		"src": "173:1:1",
+																		"type": "",
+																		"value": "0"
+																	},
+																	{
+																		"kind": "number",
+																		"nodeType": "YulLiteral",
+																		"src": "176:4:1",
+																		"type": "",
+																		"value": "0x24"
+																	}
+																],
+																"functionName": {
+																	"name": "revert",
+																	"nodeType": "YulIdentifier",
+																	"src": "166:6:1"
+																},
+																"nodeType": "YulFunctionCall",
+																"src": "166:15:1"
+															},
+															"nodeType": "YulExpressionStatement",
+															"src": "166:15:1"
+														}
+													]
+												},
+												"name": "panic_error_0x21",
+												"nodeType": "YulFunctionDefinition",
+												"src": "7:180:1"
+											}
+										]
+									},
+									"contents": "{\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n}\n",
+									"id": 1,
+									"language": "Yul",
+									"name": "#utility.yul"
+								}
+							],
+							"linkReferences": {},
+							"object": "608060405260008060006101000a81548160ff021916908360028111156026576025603b565b5b0217905550348015603657600080fd5b50606a565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b603f8060776000396000f3fe6080604052600080fdfea26469706673582212206c12ffb099c167ea1ac4f68ea44f8a41e9e1b4bfd1e7bd212e157e0d6a57765564736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 PUSH1 0x0 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH1 0xFF MUL NOT AND SWAP1 DUP4 PUSH1 0x2 DUP2 GT ISZERO PUSH1 0x26 JUMPI PUSH1 0x25 PUSH1 0x3B JUMP JUMPDEST JUMPDEST MUL OR SWAP1 SSTORE POP CALLVALUE DUP1 ISZERO PUSH1 0x36 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x6A JUMP JUMPDEST PUSH32 0x4E487B7100000000000000000000000000000000000000000000000000000000 PUSH1 0x0 MSTORE PUSH1 0x21 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST PUSH1 0x3F DUP1 PUSH1 0x77 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH13 0x12FFB099C167EA1AC4F68EA44F DUP11 COINBASE 0xE9 0xE1 0xB4 0xBF 0xD1 0xE7 0xBD 0x21 0x2E ISZERO PUSH31 0xD6A57765564736F6C63430008110033000000000000000000000000000000 ",
+							"sourceMap": "35:129:0:-:0;;;147:13;128:32;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;35:129;;;;;;;;;;;;7:180:1;55:77;52:1;45:88;152:4;149:1;142:15;176:4;173:1;166:15;35:129:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212206c12ffb099c167ea1ac4f68ea44f8a41e9e1b4bfd1e7bd212e157e0d6a57765564736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH13 0x12FFB099C167EA1AC4F68EA44F DUP11 COINBASE 0xE9 0xE1 0xB4 0xBF 0xD1 0xE7 0xBD 0x21 0x2E ISZERO PUSH31 0xD6A57765564736F6C63430008110033000000000000000000000000000000 ",
+							"sourceMap": "35:129:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "24365",
+								"totalCost": "36965"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 147,
+									"end": 160,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FF"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "PUSH",
+									"source": 0,
+									"value": "2"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "GT",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "2"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "3"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"jumpType": "[in]",
+									"name": "JUMP",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "tag",
+									"source": 0,
+									"value": "2"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 128,
+									"end": 160,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "4"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "tag",
+									"source": 0,
+									"value": "4"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "5"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "JUMP",
+									"source": 0
+								},
+								{
+									"begin": 7,
+									"end": 187,
+									"name": "tag",
+									"source": 1,
+									"value": "3"
+								},
+								{
+									"begin": 7,
+									"end": 187,
+									"name": "JUMPDEST",
+									"source": 1
+								},
+								{
+									"begin": 55,
+									"end": 132,
+									"name": "PUSH",
+									"source": 1,
+									"value": "4E487B7100000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 52,
+									"end": 53,
+									"name": "PUSH",
+									"source": 1,
+									"value": "0"
+								},
+								{
+									"begin": 45,
+									"end": 133,
+									"name": "MSTORE",
+									"source": 1
+								},
+								{
+									"begin": 152,
+									"end": 156,
+									"name": "PUSH",
+									"source": 1,
+									"value": "21"
+								},
+								{
+									"begin": 149,
+									"end": 150,
+									"name": "PUSH",
+									"source": 1,
+									"value": "4"
+								},
+								{
+									"begin": 142,
+									"end": 157,
+									"name": "MSTORE",
+									"source": 1
+								},
+								{
+									"begin": 176,
+									"end": 180,
+									"name": "PUSH",
+									"source": 1,
+									"value": "24"
+								},
+								{
+									"begin": 173,
+									"end": 174,
+									"name": "PUSH",
+									"source": 1,
+									"value": "0"
+								},
+								{
+									"begin": 166,
+									"end": 181,
+									"name": "REVERT",
+									"source": 1
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "tag",
+									"source": 0,
+									"value": "5"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 35,
+									"end": 164,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212206c12ffb099c167ea1ac4f68ea44f8a41e9e1b4bfd1e7bd212e157e0d6a57765564736f6c63430008110033",
+									".code": [
+										{
+											"begin": 35,
+											"end": 164,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 35,
+											"end": 164,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 35,
+											"end": 164,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 35,
+											"end": 164,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 35,
+											"end": 164,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 35,
+											"end": 164,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"SOLPractice/WTF001.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"SOLPractice/WTF001.sol\":\"WTF001\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"SOLPractice/WTF001.sol\":{\"keccak256\":\"0x7c509ac773094ff17a78e0c73c864c9d2a79e3bb8c6a06e853918ebac63ab4ed\",\"urls\":[\"bzz-raw://4179505138f60d19490f7112dbd49de2a6a514158fe9ca3d31c2464359864750\",\"dweb:/ipfs/QmRdxUkrt139YvJGS6JnHcT2ANMz2fk9JD45Xnar3hSr5a\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 10,
+								"contract": "SOLPractice/WTF001.sol:WTF001",
+								"label": "action",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_enum(ActionSet)5"
+							}
+						],
+						"types": {
+							"t_enum(ActionSet)5": {
+								"encoding": "inplace",
+								"label": "enum WTF001.ActionSet",
+								"numberOfBytes": "1"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> SOLPractice/WTF001.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "SOLPractice/WTF001.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"SOLPractice/WTF001.sol": {
+				"ast": {
+					"absolutePath": "SOLPractice/WTF001.sol",
+					"exportedSymbols": {
+						"WTF001": [
+							11
+						]
+					},
+					"id": 12,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "WTF001",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 11,
+							"linearizedBaseContracts": [
+								11
+							],
+							"name": "WTF001",
+							"nameLocation": "44:6:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "WTF001.ActionSet",
+									"id": 5,
+									"members": [
+										{
+											"id": 2,
+											"name": "Buy",
+											"nameLocation": "75:3:0",
+											"nodeType": "EnumValue",
+											"src": "75:3:0"
+										},
+										{
+											"id": 3,
+											"name": "Hold",
+											"nameLocation": "80:4:0",
+											"nodeType": "EnumValue",
+											"src": "80:4:0"
+										},
+										{
+											"id": 4,
+											"name": "Sell",
+											"nameLocation": "86:4:0",
+											"nodeType": "EnumValue",
+											"src": "86:4:0"
+										}
+									],
+									"name": "ActionSet",
+									"nameLocation": "63:9:0",
+									"nodeType": "EnumDefinition",
+									"src": "58:34:0"
+								},
+								{
+									"constant": false,
+									"id": 10,
+									"mutability": "mutable",
+									"name": "action",
+									"nameLocation": "138:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 11,
+									"src": "128:32:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_enum$_ActionSet_$5",
+										"typeString": "enum WTF001.ActionSet"
+									},
+									"typeName": {
+										"id": 7,
+										"nodeType": "UserDefinedTypeName",
+										"pathNode": {
+											"id": 6,
+											"name": "ActionSet",
+											"nameLocations": [
+												"128:9:0"
+											],
+											"nodeType": "IdentifierPath",
+											"referencedDeclaration": 5,
+											"src": "128:9:0"
+										},
+										"referencedDeclaration": 5,
+										"src": "128:9:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_enum$_ActionSet_$5",
+											"typeString": "enum WTF001.ActionSet"
+										}
+									},
+									"value": {
+										"expression": {
+											"id": 8,
+											"name": "ActionSet",
+											"nodeType": "Identifier",
+											"overloadedDeclarations": [],
+											"referencedDeclaration": 5,
+											"src": "147:9:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_type$_t_enum$_ActionSet_$5_$",
+												"typeString": "type(enum WTF001.ActionSet)"
+											}
+										},
+										"id": 9,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"lValueRequested": false,
+										"memberLocation": "157:3:0",
+										"memberName": "Buy",
+										"nodeType": "MemberAccess",
+										"referencedDeclaration": 2,
+										"src": "147:13:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_enum$_ActionSet_$5",
+											"typeString": "enum WTF001.ActionSet"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 12,
+							"src": "35:129:0",
+							"usedErrors": []
+						}
+					],
+					"src": "0:164:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

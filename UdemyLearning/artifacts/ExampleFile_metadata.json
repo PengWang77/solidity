@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "AaaBbb",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"UdemySolPractice/ExampleFile.sol": "ExampleFile"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"UdemySolPractice/ExampleFile.sol": {
+			"keccak256": "0x318e4d7c33e853b75933aa584914d26a77e139b44e8c0ca0b6c09e3eb74034ba",
+			"urls": [
+				"bzz-raw://9b95e68953ed4c98f6e4f15ef47a8ae373356870808e6a815b633da956c0b55d",
+				"dweb:/ipfs/QmUZ9ovoakCvJw1Njax38PopQGehkD35jx2A7CFKx7bNVi"
+			]
+		}
+	},
+	"version": 1
+}

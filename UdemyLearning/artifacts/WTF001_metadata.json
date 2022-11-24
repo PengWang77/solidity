@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Array",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enumToUint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEnum",
+				"outputs": [
+					{
+						"internalType": "enum WTF001.ActionSet",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minusPayable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"UdemySolPractice/WTF001.sol": "WTF001"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"UdemySolPractice/WTF001.sol": {
+			"keccak256": "0xbd574ea3a21ba0dc75fdb41477375921761c1457a197ab46d0f4bedab2957f54",
+			"urls": [
+				"bzz-raw://8d691c6438bad0f6077fa612fb91493bf87a0a70e021bbb767017a591b492ae2",
+				"dweb:/ipfs/QmcDP8imyZopipqRPps4ZjAYGc2YM3dZSCUKwfcNHk8PNC"
+			]
+		}
+	},
+	"version": 1
+}
